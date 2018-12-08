@@ -1,0 +1,20 @@
+a:5:{i:0;s:181:"<!DOCTYPE html>
+<html>
+	<head>
+	<link href="<?= $this->url->get('css/style1.css') ?>" rel="stylesheet">
+<script src="<?= $this->url->get('js/script.js') ?>"></script>
+		<title>";s:5:"title";N;i:1;s:370:" - My Webpage</title>
+	</head>
+	<body>
+		<h1>TCariJodoh</h1>
+
+		<?php if ($this->session->has('auth')) { ?>
+			<p style="color: white">halo, <?= $this->session->get('auth')['username'] ?></p>
+			<a class="" href="<?= $this->url->get('logout') ?>">Logout</a>
+		<?php } else { ?>
+			<a class="" href="<?= $this->url->get('login') ?>">Login</a>
+		<?php } ?>
+
+		";s:7:"content";N;i:2;s:19:"
+	</body>
+</html>";}

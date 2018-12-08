@@ -1,0 +1,146 @@
+body {
+	background-color: #efbfe1;
+	margin: 0px;
+	padding: 30px;
+}
+
+@font-face {
+font-family: 'SF UI Display Ultralight';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Ultralight'), url('sf-ui-display-ultralight-58646b19bf205.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'SF UI Display Thin';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Thin'), url('sf-ui-display-thin-58646e9b26e8b.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'SF UI Display Light';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Light'), url('sf-ui-display-light-58646b33e0551.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'SF UI Display Medium';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Medium'), url('sf-ui-display-medium-58646be638f96.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'SF UI Display Semibold';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Semibold'), url('sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'SF UI Display Bold';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Bold'), url('sf-ui-display-bold-58646a511e3d9.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'SF UI Display Heavy';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Heavy'), url('sf-ui-display-heavy-586470160b9e5.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'SF UI Display Black';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Black'), url('sf-ui-display-black-58646a6b80d5a.woff') format('woff');
+}
+
+
+h1 {
+	text-align: center;
+	font-family: 'SF UI Display Medium';
+	font-size: 36px;
+	letter-spacing: 3px;
+	color: #efbfe1;
+	background-color: #5F4C0B;
+	margin: 0px;
+	padding: 5px;
+	box-shadow: 0 2px 4px -3px #E6E6E6;
+}
+
+
+#todo_panel {
+	padding: 20px;
+	width: auto;
+}
+
+#todo_list .item {
+	list-style-type: none;
+	width: 200px;
+	height: 210px;
+	border: 1px solid #B5B5B5;
+	background-color: #FFE4A7;
+	margin: 20px;
+	padding: 20px;
+	padding-top: 40px;
+	float: left;
+	box-shadow: 2px 1px 3px #E6E6E6;
+	font-family: Brush Script MT,cursive;
+	font-size: 24px;
+}
+
+#todo_list a{
+	text-decoration: none;
+}
+
+#todo_list .item:nth-child(odd) {
+	transform: rotate(6deg);
+}
+
+#todo_list .item:nth-child(even) {
+	transform: rotate(-4deg);
+}
+
+#todo_list .item:nth-child(2n) {
+	transform: rotate(-3deg);
+}
+
+#todo_list .item:hover {
+	transition: transform 0.5s ease;
+	transform: scale(1.2);
+}
+
+#todo_input {
+	margin: 20px;
+	margin-bottom: 40px;
+}
+
+#input_label {
+	float: left;
+	font-color: #FFFFFF;
+	font-size: 18px;
+}
+
+#input_todo {
+	margin-left: 20px;
+	margin-top: 1px;
+	float: left;
+	width: 500px;
+}
+
+#add_todo {
+	float: left;
+	margin-left: 10px;
+}

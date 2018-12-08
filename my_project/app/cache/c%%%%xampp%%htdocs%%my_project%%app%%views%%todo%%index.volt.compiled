@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link href="<?= $this->url->get('css/style1.css') ?>" rel="stylesheet">
+<script src="<?= $this->url->get('js/script.js') ?>"></script>
+		<title>Halaman Utama - My Webpage</title>
+	</head>
+	<body>
+		<h1>TCariJodoh</h1>
+
+		<?php if ($this->session->has('auth')) { ?>
+			<p style="color: white">halo, <?= $this->session->get('auth')['username'] ?></p>
+			<a class="" href="<?= $this->url->get('logout') ?>">Logout</a>
+		<?php } else { ?>
+			<a class="" href="<?= $this->url->get('login') ?>">Login</a>
+		<?php } ?>
+
+		
+	
+
+	</body>
+</html>
